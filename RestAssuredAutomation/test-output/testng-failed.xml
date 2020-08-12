@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EmployeeRestAssuredAPISuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.employeeapi.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="EmployeeRestAssuredAPITest(failed)">
+    <classes>
+      <class name="com.employee.TestCases.TC001_GET_Request">
+        <methods>
+          <include name="serverType"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="getAllEmployees"/>
+          <include name="checkContentEncoding"/>
+        </methods>
+      </class> <!-- com.employee.TestCases.TC001_GET_Request -->
+      <class name="com.employee.TestCases.TC001_1_GET_SingleEmp_Request">
+        <methods>
+          <include name="contentType"/>
+          <include name="checkStatusCode"/>
+          <include name="setup"/>
+          <include name="serverType"/>
+          <include name="checkStatusLine"/>
+          <include name="checkContentLength"/>
+          <include name="checkContentEncoding"/>
+          <include name="getAllEmployees"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.employee.TestCases.TC001_1_GET_SingleEmp_Request -->
+    </classes>
+  </test> <!-- EmployeeRestAssuredAPITest(failed) -->
+</suite> <!-- Failed suite [EmployeeRestAssuredAPISuite] -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="EmployeeRestAssuredAPISuite">
+<listeners>
+ <listener class-name = "com.employeeapi.utilities.Reporting"/> 
+ </listeners> 
+
+ <test thread-count="5" name = "EmployeeRestAssuredAPITest">
+ 
+ 
+ 
+    <classes>
+    	
+        <class name="com.employee.TestCases.TC001_GET_Request"/> 
+        <class name="com.employee.TestCases.TC001_1_GET_SingleEmp_Request"/>
+        <class name="com.employee.TestCases.TC002_POST_Request"/>
+        <class name="com.employee.TestCases.TC003_PUT_Requesut"/>
+        <class name="com.employee.TestCases.TC005_DELETE_Request"/>          
+       
+     </classes>
+</test> 
+</suite> 
